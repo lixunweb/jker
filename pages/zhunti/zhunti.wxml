@@ -1,0 +1,16 @@
+<view class="ztimg"><image src='../images/speic_01.jpg'></image></view>
+<view class='list' wx:for='{{listArry}}' wx:key='id'>
+  <view class='tit'>
+    <image src='../images/spec_03.png'></image>
+    <text>{{item.title}}</text>
+  </view>
+  <view class='txt' wx:for='{{item.content_list}}' wx:for-item="list" data-catid="{{list.catid}}" data-id="{{list.id}}" bindtap='detail'>
+    <view class='timg'><image src='{{list.thumb}}'></image></view>
+    <view class='twz'>
+      <text class='h1'>{{list.title}}</text>
+      <text class='h2'>{{list.description}}</text>
+    </view>
+  </view>
+  
+
+</view>

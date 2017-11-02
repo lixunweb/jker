@@ -1,0 +1,18 @@
+/* pages/video/video.wxss */
+.list{
+  width: 690rpx;height:auto;
+  margin:30rpx auto;
+  overflow: hidden;
+}
+.listimg{
+  width: 690rpx;height: 400rpx;
+  position: relative;
+  z-index: 1;
+}
+image.vthumb{
+  width: 690rpx;height: 400rpx;
+}
+.tit{
+  font-size: 32rpx;
+  margin: 10rpx 0;
+}

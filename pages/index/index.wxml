@@ -1,0 +1,163 @@
+<!--index.wxml-->
+ <include src="../template/header.wxml"/>
+<!--banner-->
+<view class='banner'>
+  <swiper indicator-dots="false" autoplay="true" interval="5000" duration="500">
+      <swiper-item wx:for="{{banArry}}" wx:key="id" data-catid="{{item.catid}}" data-id="{{item.id}}" bindtap='detail'><image wx:if="{{item.thumb}}" src="{{item.thumb}}" /><view class="title_ban">{{item.title}}</view></swiper-item>
+  </swiper>
+</view>
+<view class='box mb100'>
+  <!--广告-->
+  <view class='ad' wx:if='{{index[0].data.setting.imageurl}}' bindtap='zhuanti'>
+    <view class='ad_img'>
+      <image  wx:if="{{index[0].data.setting.imageurl}}" src='{{index[0].data.setting.imageurl}}'></image>
+      <view class='ad_txta'>广告</view>
+      <view class='ad_txtb'>x</view>
+    </view>
+  </view>
+  <!-- 咨询 -->
+  <view class='list'>
+    <view class='listimg' bindtap='detail' data-catid="{{index[6].data[0].catid}}" data-id="{{index[6].data[0].id}}">
+      <view class='tag' style='background:{{index[6].color}}'>{{index[6].catname}}</view>
+      <image src='{{index[6].data[0].thumb}}'></image>
+    </view>
+    <text class='tit' bindtap='detail' data-catid="{{index[6].data[0].catid}}" data-id="{{index[6].data[0].id}}">{{index[6].data[0].title}}</text>
+    <view class='list_ul'>
+      <view class='lieach' bindtap='detail' data-catid="{{index[6].data[1].catid}}" data-id="{{index[6].data[1].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[6].data[1].title}}</text>
+      </view>
+      <view class='lieach' bindtap='detail' data-catid="{{index[6].data[2].catid}}" data-id="{{index[6].data[2].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[6].data[2].title}}</text>
+      </view>
+    </view>
+  </view>
+  <!--广告  -->
+  <view class='ad'>
+    <view class='ad_img ad_img2'>
+      <image src='{{index[7].data.setting.imageurl}}'></image>
+      <view class='ad_txta ad_txta2'>广告</view>
+    </view>
+  </view>
+  <!--youl-->
+  <view class='list'>
+    <view class='listimg' bindtap='detail' data-catid="{{index[1].data[0].catid}}" data-id="{{index[1].data[0].id}}">
+      <view class='tag' style='background:{{index[1].color}}'>{{index[1].catname}}</view>
+      <image src='{{index[1].data[0].thumb}}'></image>
+    </view>
+    <text class='tit' bindtap='detail' data-catid="{{index[1].data[0].catid}}" data-id="{{index[1].data[0].id}}">{{index[1].data[0].title}}</text>
+    <view class='list_ul'>
+      <view class='lieach' bindtap='detail' data-catid="{{index[1].data[1].catid}}" data-id="{{index[1].data[1].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[1].data[1].title}}</text>
+      </view>
+      <view class='lieach' bindtap='detail' data-catid="{{index[1].data[2].catid}}" data-id="{{index[1].data[2].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[1].data[2].title}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 评测 -->
+  <view class='list'>
+    <view class='listimg' bindtap='detail' data-catid="{{index[2].data[0].catid}}" data-id="{{index[2].data[0].id}}">
+      <view class='tag' style='background:{{index[2].color}}'>{{index[2].catname}}</view>
+      <image src='{{index[2].data[0].thumb}}'></image>
+    </view>
+    <text class='tit' bindtap='detail' data-catid="{{index[2].data[0].catid}}" data-id="{{index[2].data[0].id}}">{{index[2].data[0].title}}</text>
+    <view class='list_ul'>
+      <view class='lieach' bindtap='detail' data-catid="{{index[2].data[1].catid}}" data-id="{{index[2].data[1].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[2].data[1].title}}</text>
+      </view>
+      <view class='lieach' bindtap='detail' data-catid="{{index[2].data[2].catid}}" data-id="{{index[2].data[2].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[2].data[2].title}}</text>
+      </view>
+    </view>
+  </view>
+  <!--广告 -->
+  <view class='ad'>
+    <view class='ad_img ad_img2'>
+      <image src='{{index[3].data.setting.imageurl}}'></image>
+      <view class='ad_txta ad_txta2'>广告</view>
+    </view>
+  </view>
+  <!-- 视界 -->
+  <view class='list'>
+    <view class='listimg' bindtap='detail' data-catid="{{index[4].data[0].catid}}" data-id="{{index[4].data[0].id}}">
+      <view class='tag' style='background:{{index[4].color}}'>{{index[4].catname}}</view>
+      <image src='{{index[4].data[0].thumb}}'></image>
+      <view class='bar'>
+        <view class="play-btn"></view>
+        <view class="video-duration">{{index[4].data[0].video_time}}</view>
+      </view>
+    </view>
+    <text class='tit' bindtap='detail' data-catid="{{index[4].data[0].catid}}" data-id="{{index[4].data[0].id}}">{{index[4].data[0].title}}</text>
+    <view class='list_ul'>
+      <view class='lieach' bindtap='detail' data-catid="{{index[4].data[1].catid}}" data-id="{{index[4].data[1].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[4].data[1].title}}</text>
+      </view>
+      <view class='lieach' bindtap='detail' data-catid="{{index[4].data[2].catid}}" data-id="{{index[4].data[2].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[4].data[2].title}}</text>
+      </view>
+    </view>
+  </view>
+  <!--广告 -->
+  <view class='ad'>
+    <view class='ad_img ad_img2'>
+      <image src='{{index[5].data.setting.imageurl}}'></image>
+      <view class='ad_txta ad_txta2'>广告</view>
+    </view>
+  </view>
+ 
+  <!-- 学堂 -->
+  <view class='list'>
+    <view class='listimg' bindtap='detail' data-catid="{{index[8].data[0].catid}}" data-id="{{index[8].data[0].id}}">
+      <view class='tag' style='background:{{index[8].color}}'>{{index[8].catname}}</view>
+      <image src='{{index[8].data[0].thumb}}'></image>
+    </view>
+    <text class='tit' bindtap='detail' data-catid="{{index[8].data[0].catid}}" data-id="{{index[8].data[0].id}}">{{index[8].data[0].title}}</text>
+    <view class='list_ul'>
+      <view class='lieach' bindtap='detail' data-catid="{{index[8].data[1].catid}}" data-id="{{index[8].data[1].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[8].data[1].title}}</text>
+      </view>
+      <view class='lieach' bindtap='detail' data-catid="{{index[8].data[2].catid}}" data-id="{{index[8].data[2].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[8].data[2].title}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 策划 -->
+  <view class='list'>
+    <view class='listimg' bindtap='detail' data-catid="{{index[9].data[0].catid}}" data-id="{{index[9].data[0].id}}">
+      <view class='tag' style='background:{{index[9].color}}'>{{index[9].catname}}</view>
+      <image src='{{index[9].data[0].thumb}}'></image>
+    </view>
+    <text class='tit' bindtap='detail' data-catid="{{index[9].data[0].catid}}" data-id="{{index[9].data[0].id}}">{{index[9].data[0].title}}</text>
+    <view class='list_ul'>
+      <view class='lieach' bindtap='detail' data-catid="{{index[9].data[1].catid}}" data-id="{{index[9].data[1].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[9].data[1].title}}</text>
+      </view>
+      <view class='lieach' bindtap='detail' data-catid="{{index[9].data[2].catid}}" data-id="{{index[9].data[2].id}}">
+        <image src='../images/icon1.png'></image>
+        <text>{{index[9].data[2].title}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 专题 
+  <view class='list'>
+    <view class='listimg' bindtap='detailZt' data-catid="{{index[11].data[0].catid}}" data-id="{{index[11].data[0].id}}">
+      <view class='tag' style='background:{{index[11].color}}'>{{index[11].catname}}</view>
+      <image src='{{index[11].data[0].thumb}}'></image>
+    </view>
+    <text class='tit' bindtap='detailZt' data-catid="{{index[11].data[0].catid}}" data-id="{{index[11].data[0].id}}">{{index[6].data[0].title}}</text>
+  </view>
+  -->
+
+</view>
+<include src="../template/footer.wxml"/>

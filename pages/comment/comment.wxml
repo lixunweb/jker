@@ -1,0 +1,12 @@
+<include src="../template/header.wxml"/>
+<view class='box'>
+  <view class='toal'>查看全部{{total}}条评论</view>
+  <view class='list' wx:for='{{commentList}}'>
+    <view class='tx'> <image src="{{item.icon}}"></image> </view>
+    <view class='con'>
+      <view class='h1'>{{item.username}}</view>    
+      <view class='h2'>{{item.content}}</view>
+    </view>
+  </view>
+</view>
+<include src="../template/footer.wxml"/>

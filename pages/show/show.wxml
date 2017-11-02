@@ -1,0 +1,47 @@
+<include src="../template/header.wxml"/>
+<!--广告-->
+  <view class='ad'>
+    <view class='ad_img'>
+      <image src='{{showad}}'></image>
+      <view class='ad_txta'>广告</view>
+    </view>
+  </view>
+<view class='box mb100'>
+  <view class='show_tit'>{{con.title}}</view>
+  <view class='show_author'>作者/{{con.author}}</view>
+  <!-- <view class='content'>{{con.content}}</view> -->
+  <import src="../../wxParse/wxParse.wxml"/>
+  <import src="../../wxParse/wxParse.wxss"/>
+  <view class="content">
+    <!-- 这一块是富文本 显示的内容区 -->
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+  <block wx:if="{{video}}">
+  <view class='video'>
+    <video src='{{con.video_url}}' danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+    </view>
+  </block>
+  <!--评论-->
+  <view class='ptit'> <view class='ptxt'>评论 <text>(0)</text> </view> </view>
+  <form bindsubmit="bindFormSubmit">
+    <textarea class='plcon' name='textarea'></textarea>
+    <button class='plbtn' form-type="submit">提交</button>
+  </form>
+  <view class='listcom' wx:for='{{commentList}}'>
+    <view class='tx'> <image src="{{item.icon}}"></image> </view>
+    <view class='con'>
+      <view class='h1'>{{item.username}}</view>    
+      <view class='h2'>{{item.content}}</view>
+    </view>
+  </view>
+  <view class='more' bindtap='moreComment' data-catid='{{con.catid}}' data-id='{{con.id}}'>点击查看更多评论</view>
+  <!-- 相关阅读 -->
+  <view class='rela'>相关阅读</view>
+  <view class='rellist'>
+    <view class='each' wx:for="{{listArry}}" data-catid="{{item.catid}}" data-id="{{item.id}}" bindtap='detail'>
+      <image src="{{item.thumb}}"></image>
+      <view class='etit'>{{item.title}}</view>
+    </view>
+  </view>
+</view>
+<include src="../template/footer.wxml"/>

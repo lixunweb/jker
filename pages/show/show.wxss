@@ -1,0 +1,100 @@
+.ad_img image{
+  width: 750rpx;height: 290rpx;
+}
+.ad_txta{float:right;margin: 0 10rpx 0 0;}
+.show_tit{
+  font-size: 36rpx;
+  color: #262626;
+  margin: 30rpx 0 10rpx;
+}
+.show_author{
+  font-size: 26rpx;
+  color: #626262;
+}
+.content{
+  margin: 30rpx 0;
+}
+.content view,.content image{margin-bottom: 10rpx;  line-height: 50rpx;}
+.video video{
+  width: 100%;height: 460rpx;
+  margin: 30rpx 0;
+}
+.ptit{
+    width: 100%;
+    height: 50rpx;
+    line-height: 50rpx;
+    background-color: #dcdcdc;
+    margin-bottom: 20rpx;
+    font-size: 26rpx;
+    color: #fff;
+}
+.ptxt{
+    position: relative;
+    top:0;
+    display: inline-block;
+    width: 160rpx;
+    text-align: center;
+    background-color: #626262;
+}
+.ptxt::after{
+    position: absolute;
+    top: 0;
+    left: 133rpx;
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: solid 50rpx #626262;
+    border-left: solid 30rpx transparent;
+    border-right: solid 30rpx transparent;
+}
+.plcon{
+  width: 100%;height: 150rpx;
+  box-sizing:border-box;
+  border: 1px solid #ccc;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  padding: 10rpx;
+}
+.plbtn{
+  float: right;
+  margin-top: 20rpx;
+  padding: 0rpx 20rpx;
+  border: 1px solid #ccc;
+  font-size: 26rpx;
+  color: #333;
+  background:linear-gradient(#e5e6e6, #fefefd);
+}
+.more{
+  clear: both;
+  font-size: 26rpx;
+  text-align: center;
+  color: #999;
+}
+.rela{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #333;
+  font-weight:bold;
+  border-bottom: 1px solid #ccc;
+}
+.rellist{
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.each{
+  width: 220rpx;height: auto;
+  overflow: hidden;
+}
+.rellist image{
+  width: 220rpx;height: 125rpx;
+}
+.etit{
+  height: 60rpx;
+  background: #eee;
+  font-size: 26rpx;
+  line-height: 30rpx;
+  color: #666;
+}

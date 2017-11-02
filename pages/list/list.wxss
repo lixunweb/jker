@@ -1,0 +1,48 @@
+/* pages/list/list.wxss */
+.local{
+  padding: 0 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #0068b7;
+  font-size: 34rpx;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.title{
+  font-size: 36rpx;color: #262626;
+  margin: 20rpx 0;
+}
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 0 0 30rpx 0;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 30rpx;
+}
+.left{
+  width: 460rpx;
+}
+.tag1{
+  font-size: 26rpx;
+  color: #f6ab00;
+  display: block;
+}
+.txt{
+  font-size: 34rpx;
+  color: #262626;
+  display: block;
+  margin: 10rpx 0;
+}
+.author{
+  font-size: 26rpx;
+  color: #a3a2a2;
+}
+.right{
+  width: 210rpx;height: 118rpx;
+}
+.right image{
+  width: 210rpx;height: 118rpx;
+}

@@ -1,0 +1,18 @@
+<include src="../template/header.wxml"/>
+<!--广告-->
+  <view class='ad'>
+    <view class='ad_img'>
+      <image src='{{showad}}'></image>
+      <view class='ad_txta'>广告</view>
+    </view>
+  </view>
+  <view class='box mb100'>
+    <view class='title'>往届BICES展回顾</view>
+    <view class='list' wx:for="{{pic}}">
+      <image src="{{item.url}}"></image>
+      <text>{{item.alt}}</text>
+    </view>
+  </view>
+
+
+<include src="../template/footer.wxml"/>

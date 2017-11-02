@@ -1,0 +1,18 @@
+/* pages/search/search.wxss */
+.list{
+  width: 100%;height: auto;
+  padding: 20rpx 0;
+  border-bottom: 1px dotted #ddd;
+}
+.tit{
+  font-size: 30rpx;
+  color: #333;
+  line-height: 50rpx;
+  margin-bottom: 10rpx;
+  display: block;
+}
+.author{
+  display: block;
+  font-size: 26rpx;
+  color: #666;
+}

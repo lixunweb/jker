@@ -1,0 +1,21 @@
+{
+  "pages":[  
+    "pages/index/index",  
+    "pages/zhunti/zhunti", 
+    "pages/comment/comment", 
+    "pages/search/search",    
+    "pages/special/special",
+    "pages/show/show",    
+    "pages/list/list",
+    "pages/video/video",
+    "pages/template/header",
+    "pages/template/footer",    
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "匠客工程机械",
+    "navigationBarTextStyle":"black"
+  }
+}

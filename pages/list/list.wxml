@@ -1,0 +1,30 @@
+<include src="../template/header.wxml"/>
+  <view class='local'>{{catname}}</view>
+  <!--banner-->
+
+  <view class='banner'>
+    <swiper indicator-dots="false" autoplay="true" interval="5000" duration="500">
+        <swiper-item wx:for="{{banArry}}" wx:key="id" data-catid="{{item.catid}}" data-id="{{item.id}}" bindtap='detail'><image src="{{item.thumb}}" /><view class="title_ban">{{item.title}}</view></swiper-item>
+    </swiper>
+  </view>
+  <!--列表-->
+  <view class='box'>
+    <!-- <view class='title'>最新报道</view> -->
+    <view class='list' wx:for="{{listArry}}" data-id="{{item.id}}" bindtap='detail'>
+      <view class='left'>
+        <text class='tag1'>{{item.keywords}}</text>
+        <text class='txt'>{{item.title}}</text>
+        <text class='author'>{{item.author}}</text>
+      </view>
+      <view class='right'><image src="{{item.thumb}}" /></view>
+    </view>
+
+    
+  </view>
+<view class="body-view">
+    <loading hidden="{{hidden}}" bindchange="loadingChange">
+        加载中...
+    </loading>
+</view>
+<view class='nodata' hidden="{{hidden2}}">没有更多了</view>
+<include src="../template/footer.wxml"/>

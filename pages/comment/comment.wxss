@@ -1,0 +1,14 @@
+/* pages/comment/comment.wxss */
+.toal{
+  text-align: center;
+  margin: 20rpx 0;
+  font-size: 26rpx;
+  color: #333;
+}
+.list{
+  width: 100%;height: auto;
+  overflow: hidden;
+  display: flex;
+  padding: 30rpx 0;
+  border-bottom: 1px solid #ddd;
+}

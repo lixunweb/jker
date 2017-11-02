@@ -1,0 +1,19 @@
+/* pages/special/special.wxss */
+.ad_img image{
+  width: 750rpx;height: 290rpx;
+}
+.ad_txta{float:right;margin: 0 10rpx 0 0;}
+.title{
+  font-size: 36rpx;
+  margin-top: 50rpx;
+}
+.list{
+  width:100%;height: auto;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #ddd;
+  margin-top: 30rpx;
+}
+.list image{
+  width:690rpx;height: 490rpx;
+}
+.list text{font-size: 26rpx;color: #666;}

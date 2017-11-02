@@ -1,0 +1,4 @@
+ <view class="foot">
+  <view class="footer">Copyright@2017jker.cn 京ICP备10026412号-53</view>
+</view>
+ <view class='home' bindtap='goHome'>回到首页</view>

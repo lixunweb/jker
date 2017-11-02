@@ -1,0 +1,8 @@
+ <include src="../template/header.wxml"/>
+ <view class='box mb100'>
+  <view class='list' wx:for="{{searchList}}" data-catid="{{item.catid}}" data-id="{{item.id}}" bindtap='detail'>
+    <text class='tit'>{{item.title}}</text>
+    <text class='author'>作者：{{item.author}}</text>
+  </view>
+ </view>
+ <include src="../template/footer.wxml"/>

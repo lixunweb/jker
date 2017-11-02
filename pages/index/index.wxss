@@ -1,0 +1,82 @@
+/**index.wxss**/
+.ad_img{
+  height: auto;
+  overflow: hidden;
+  padding: 20rpx 0 10rpx; 
+  border-top:1px solid #d8d8d8;
+  border-bottom:1px solid #d8d8d8;
+}
+.ad_img image{
+  width: 690rpx;height: 80rpx;
+}
+.ad_txta{
+  font-size: 18rpx;
+  color: #d8d8d8;
+  border:1px solid #d8d8d8;
+  float: left;
+  padding: 2rpx 5rpx;
+  border-radius: 5rpx;
+}
+.ad_txtb{
+  font-size: 30rpx;
+  color: #d8d8d8;
+  float: right;
+  margin-right: 10rpx;
+}
+.ad_img2 image{
+  width: 750rpx;height: 290rpx;
+}
+.ad_txta2{float:right;margin: 0 10rpx 0 0;}
+.list{
+  height: auto;
+  overflow: hidden;
+  margin-top: 30rpx;
+}
+.listimg{
+  position: relative;
+  width: 690rpx;height: 388rpx;
+}
+.tag{
+  position: absolute;
+  left: 0;top: 30rpx;
+  width: 100rpx;height: 48rpx;
+  line-height: 48rpx;
+  background: #1d50a2;
+  text-align: center;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.listimg image{
+  width: 690rpx;height: 388rpx;
+}
+.tit{
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.list_ul{
+  height: auto;
+  overflow: hidden;
+  margin-top: 30rpx;
+  padding: 20rpx 0;
+  border-top:1px solid #d8d8d8;
+}
+.lieach image{
+  width: 8rpx;height: 28rpx;
+  margin:10rpx 10rpx;
+  float: left;
+}
+.lieach{
+  display: flex;
+  align-items: center;
+  width: 100%;height: 40rpx;
+  line-height: 40rpx;
+  margin-bottom: 10rpx;
+}
+.lieach text{
+  font-size: 28rpx;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

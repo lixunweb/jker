@@ -1,0 +1,21 @@
+<view class="header">
+<view class='fixed'>
+  <view class='logo'><image src='../images/logo.png'></image></view>
+  <view class='search'>
+    <view class='seimg'><image src='../images/serach.png'></image></view>
+    <view class='seinput'>
+      <input class='q' name="q" bindinput='qInput' type='text'></input><view class='sbtn' bindtap='qtbn'></view>
+    </view>
+  </view>
+  <!-- <view class='login'>登录</view> -->
+  <view class='nav_menu' bindtap='menu'><image src='../images/nav_icon.png'></image></view>
+  </view>
+</view>
+<!--导航-->
+<view class='nav_dia {{menu?"":"undis"}}' bindtap='menu'></view>
+<view class='nav {{menu?"":"undis"}}'>
+  <view class='navtxt' bindtap="goHome">首页</view>
+  <block wx:for="{{navArry}}" wx:key="id">
+    <view class='navtxt' wx:if="{{item.ismenu>0}}" data-catid="{{item.catid}}" bindtap="catList">{{item.catname}}</view>
+  </block>
+</view>
